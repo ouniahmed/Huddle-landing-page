@@ -1,0 +1,160 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/*---------------------
+			typography
+----------------------*/
+
+body {
+	background: url('images/bg-mobile.svg') no-repeat center;
+	background-color: hsl(257, 40%, 49%);
+	background-size: 100% 100%;
+	line-height: 1.6;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	color: #fff;
+}
+
+body,
+h1,
+h2,
+p {
+	margin: 0;
+}
+
+h1,
+h2 {
+	line-height: 1;
+}
+
+img {
+	max-width: 100%;
+}
+
+.container {
+	max-width: 70.5rem;
+	width: 90%;
+	margin-inline: auto;
+}
+
+header,
+main {
+	padding: 3rem 0;
+}
+
+.logo {
+	max-width: 60%;
+}
+
+.text-center {
+	width: 100%;
+	max-width: 25rem;
+	margin: auto;
+	text-align: center;
+}
+
+.text-center > * {
+	margin: 2rem;
+}
+
+.btn-register {
+	text-decoration: none;
+	color: hsl(257, 40%, 49%);
+	background-color: #fff;
+	border-radius: 20px;
+	padding: 0.5em 3.5em;
+	margin: 0;
+}
+
+/* ICONS */
+
+.icon-container {
+	display: flex;
+	justify-content: center;
+	padding: 2rem 0;
+}
+
+.icons {
+	width: 2rem;
+	height: 2rem;
+	display: inline-block;
+	margin-left: 0.5rem;
+}
+
+.facebook-icon {
+	background: url('images/facebook.png') no-repeat center;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.tweeter-icon {
+	background: url('images/twitter.png') no-repeat center;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+.insta-icon {
+	background: url('images/instagram.png') no-repeat center;
+	background-size: 100% 100%;
+	cursor: pointer;
+}
+
+/*-------------------
+       layout
+--------------------*/
+
+.split {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+@media (min-width: 78.125rem) {
+	body {
+		background: url('images/bg-desktop.svg') no-repeat center;
+		background-color: hsl(257, 40%, 49%);
+		background-size: 100% 100%;
+		line-height: 1.6;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: #fff;
+	}
+	.split {
+		flex-direction: row;
+	}
+
+	.text-center {
+		text-align: start;
+		margin-top: 1rem;
+	}
+
+	.btn-register {
+		display: inline-block;
+		margin-left: 6em;
+	}
+
+	.icon-container {
+		justify-content: flex-end;
+	}
+
+	.btn-register:hover {
+		background-color: hsl(300, 69%, 71%);
+	}
+
+	.facebook-icon:hover {
+		background: url('images/facebook\ _hover.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.tweeter-icon:hover {
+		background: url('images/twitter_hover.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+	.insta-icon:hover {
+		background: url('images/instagram_hover.png') no-repeat center;
+		background-size: 100% 100%;
+	}
+}
