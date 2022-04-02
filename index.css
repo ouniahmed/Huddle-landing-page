@@ -30,8 +30,14 @@ h2 {
 	line-height: 1;
 }
 
-img {
-	max-width: 100%;
+main img {
+	max-width: 80%;
+	display: block;
+}
+
+.logo {
+	max-width: 60%;
+	display: block;
 }
 
 .container {
@@ -43,10 +49,6 @@ img {
 header,
 main {
 	padding: 3rem 0;
-}
-
-.logo {
-	max-width: 60%;
 }
 
 .text-center {
@@ -113,7 +115,7 @@ main {
 	align-items: center;
 }
 
-@media (min-width: 78.125rem) {
+@media (min-width: 50rem) {
 	body {
 		background: url('images/bg-desktop.svg') no-repeat center;
 		background-color: hsl(257, 40%, 49%);
@@ -122,9 +124,22 @@ main {
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
 		color: #fff;
+		height: 100vh;
 	}
+
+	main img {
+		max-width: 40%;
+		min-width: 27rem;
+	}
+
 	.split {
 		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	header,
+	main {
+		padding: 2.5rem 0;
 	}
 
 	.text-center {
